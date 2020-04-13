@@ -1,18 +1,24 @@
 module Example
-export hello, domath
+export foo, bar
 
 """
-    hello(who::String)
-
-Return "Hello, `who`".
+Generic `foo`.
 """
-hello(who::String) = "Hello, $who"
+foo(x) = x+2
 
 """
-    domath(x::Number)
-
-Return `x + 5`.
+Specialized non-existing `foo(::Int)`.
 """
-domath(x::Number) = x + 5
+foo(::Int) # Note: no definition
+
+"""
+Generic `bar`.
+"""
+bar(x) = x+2
+
+"""
+Specialized existing `bar(::Int)`.
+"""
+bar(x::Int) = x + 3
 
 end
