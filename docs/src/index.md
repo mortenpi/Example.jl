@@ -12,16 +12,18 @@ Specialized docstring for a specialized method, even if that does not actually e
 foo(::Int)
 ```
 
+And copying docstrings:
+
+```@docs
+foo(::Float64)
+```
+
 ## Normal function
 
 Generic method that actually exists, has a generic docstring:
 
 ```@docs
 bar(::Any)
-```
-
-Specialized docstring attached to an existing specialized method:
-
-```@docs
 bar(::Int)
+bar(::Float64)
 ```
