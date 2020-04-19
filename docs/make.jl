@@ -2,4 +2,4 @@ using Documenter, Example
 
 makedocs(modules = [Example], sitename = "Example.jl")
 
-deploydocs(repo = "github.com/JuliaLang/Example.jl.git")
+deploydocs(repo = "github.com/mortenpi/Example.jl.git")
